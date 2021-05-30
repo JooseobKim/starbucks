@@ -1,0 +1,19 @@
+# 프로젝트의 루트 경로에 favicon 파일이 존재한다면 브라우저는 자동으로 루트 경로의 파비콘 이미지를 찾아서 HTML 파일을 열었을 때 적용시켜 준다. 단, 이름은 무조건 favicon 이어야 한다.
+
+# favicon.ico 파일의 해상도가 떨어져서 png 파일로 교체하고 싶다면 HTML 파일에서 head 태그 안에 link 태그로 rel 속성은 icon으로 설정하고, href에 png 파일의 경로를 입력한다.
+
+# 오픈 그래프(The Open Graph protocol): 웹 페이지가 소셜 미디어(페이스북 등)로 공유될 때 우선적으로 활용되는 정보를 지정한다.
+
+# CSS 속성 중 position을 absolute로 지정하고, top, right, bottom, left를 0으로 지정하였을 때, 상위 요소 중 position이 relative인 태그를 기준으로 top의 0 지점, right의 0 지점, bottom의 0 지점, left의 0 지점을 기준으로 잡겠다는 의미이다. 이때 margin 속성에 auto를 지정할 경우 top, right, bottom, left의 시작 지점을 기준으로 가운데 배치가 된다. 단, 배치 대상의 크기가 있어야 한다. 기존에 top, right, bottom, left를 0으로 지정하는 것을 strech의 개념으로 잘못 이해하고 있던 부분을 바로 잡자. 추가로 정렬과 배치의 개념은 다르다. 배치는 요소의 위치 지정에 가깝고, 정렬은 요소들의 나열에 가깝다.
+
+# 가상 요소(::before와 ::after)는 기본 값이 인라인 요소이다.
+
+# position 속성의 absolute와 fixed 값은 기본 값이 블록 요소이다. 다시 말해서, 가상 요소의 속성에 position: absolute 혹은 fixed를 적용할 경우 블록 요소로 전환된다.
+
+# position 속성의 absolute와 fixed 값은 블록 요소이기는 하나 가로 너비가 최대한 늘어나려는 일반적인 블록 요소와는 반대로 최대한 줄어드려고 한다.
+
+# postion 속성의 absoulte는 부모 요소를 기준으로 배치가 된다. 구조 상 부모 요소에 postion 값이 있다면 구조 상 부모 요소를 기준으로 배치된다. 구조 상 부모 요소의 postion 값이 absolute여도 해당된다.
+
+# youtube, vimeo 등의 영상들은 기본적으로 가로 사이즈와 세로 사이즈가 16:9 비율로 영상이 제공된다. 16:9를 백분율로 환산하면 100%:56.25%가 된다.
+
+# img 태그에서 display: block; + margin: 0 auto; 인 경우 width 속성이 없이도 가운데 정렬이 가능하다.
